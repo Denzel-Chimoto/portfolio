@@ -10,7 +10,7 @@ import image3 from '../../assets/nrzbook/nrzbookNewBooking.jpg';
 
 export default function NRZBOOKING() {
   const projectData = {
-    title: "BikeIT Courier Service",
+    title: "National Railways of Zimbabwe",
     year: "2023",
     role: "Solo Project",
     techStack: ["React", "React Native", "PostgreSQL", "EasyOCR", "PyTorch", "OpenCV"],
