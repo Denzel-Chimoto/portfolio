@@ -3,9 +3,9 @@ import CollapsibleExample from './components/NavBar';
 import Home from './pages/Home';
 import './App.css';
 import ContactLinks from './components/ContactLinks';
-import SmartPharm from './pages/Proj-SmartPharm';
-import CABSManuals from './pages/Proj-ResearchPaper';
-import NRZBook from './pages/Proj-NRZBook';
+import SmartPharm from './pages/pages/smart-pharmacy';
+import CABSManuals from './pages/pages/reconciliation';
+import NRZBook from './pages/pages/bikeit';
 
 function App() {
   return (

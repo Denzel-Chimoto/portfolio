@@ -1,9 +1,9 @@
-import ProjectHeader from "@/components/ProjectHeader";
-import TechStackList from "@/components/TechStackList";
-import ProjectOverview from "@/components/ProjectOverview";
-import KeyPointsList from "@/components/KeyPointsList";
-import ImageGallery from "@/components/ImageGallery";
-import ExternalLinks from "@/components/ExternalLinks";
+import ProjectHeader from "../../components/ProjectHeader";
+import TechStackList from "../../components/TechStackList";
+import ProjectOverview from "../../components/ProjectOverview";
+import KeyPointsList from "../../components/KeyPointsList";
+import ImageGallery from "../../components/ImageGallery";
+import ExternalLinks from "../../components/ExternalLinks";
 
 export default function SmartPharmacyPage() {
   const projectData = {
