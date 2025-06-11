@@ -1,10 +1,13 @@
 import ProjectHeader from "@/components/ProjectHeader";
-import ImageGallery from "@/components/ImageGallery";
+import TechStackList from "@/components/TechStackList";
+import ProjectOverview from "@/components/ProjectOverview";
 import KeyPointsList from "@/components/KeyPointsList";
+import ImageGallery from "@/components/ImageGallery";
+import ExternalLinks from "@/components/ExternalLinks";
 
 export default function SmartPharmacyPage() {
   const projectData = {
-    title: "Smart Pharmacy with Online Prescription Processing",
+    title: "Smart Pharmacy Network",
     year: "2023",
     role: "Solo Project",
     techStack: ["React", "React Native", "PostgreSQL", "EasyOCR", "PyTorch", "OpenCV"],
@@ -13,49 +16,21 @@ export default function SmartPharmacyPage() {
   };
 
   const keyPoints = [
-    { title: "Problem Solved", content: "Patients waste hours searching pharmacies for medications. Pharmacies lose sales due to inventory mismatches." },
-    { title: "Solution", content: "AI-powered marketplace matches prescriptions with pharmacy inventory in real-time." },
-    { title: "Key Features", content: "OCR prescription scanning, geolocation-based pharmacy matching, secure medication delivery tracking." },
-    { title: "Impact", content: "Reduced medication search time by 50% in pilot tests with 3 pharmacies in Harare." }
+    { title: "Problem Solved", content: "Reducing pharmacy search time by 50% through AI-powered matching." },
+    { title: "Features", content: "OCR-based prescription scanning, real-time inventory matching." },
   ];
 
-  const images = [
-    "/projects/smart-pharmacy-1.jpg",
-    "/projects/smart-pharmacy-2.jpg",
-    "/projects/smart-pharmacy-3.jpg",
-  ];
+  const images = ["/smartpharmacy1.jpg", "/smartpharmacy2.jpg"];
+  const externalLinks = [{ name: "GitHub Repo", url: projectData.githubLink }, { name: "Live Demo", url: projectData.demoLink }];
 
   return (
     <div className="container py-5">
       <ProjectHeader {...projectData} />
-      
-      <section className="mb-5">
-        <h2 className="h4 fw-semibold mb-3 text-dark">Overview</h2>
-        <p className="text-muted">
-          A digital marketplace connecting patients with pharmacies that have their prescribed 
-          medications in stock. Uses OCR technology to digitize paper prescriptions and 
-          machine learning to match with pharmacy inventory in real-time while maintaining 
-          strict HIPAA-compliant data privacy.
-        </p>
-      </section>
-
-      <section className="mb-5">
-        <ImageGallery images={images} />
-      </section>
-
-      <section className="mb-5">
-        <KeyPointsList items={keyPoints} />
-      </section>
-
-      <section>
-        <h2 className="h4 fw-semibold mb-3 text-dark">Technical Details</h2>
-        <ul className="list-group">
-          <li className="list-group-item">React Native frontend with custom camera integration for prescription capture.</li>
-          <li className="list-group-item">Python backend with PyTorch for OCR model trained on Zimbabwean prescriptions.</li>
-          <li className="list-group-item">PostgreSQL database with full-text search for medication inventory.</li>
-          <li className="list-group-item">Twilio API for SMS notifications to patients and pharmacies.</li>
-        </ul>
-      </section>
+      <TechStackList stack={projectData.techStack} />
+      <ProjectOverview overview="An AI-powered marketplace connecting patients with pharmacies." />
+      <KeyPointsList items={keyPoints} />
+      <ImageGallery images={images} />
+      <ExternalLinks links={externalLinks} />
     </div>
   );
 }
