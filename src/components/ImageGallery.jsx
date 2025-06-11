@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 
-
 export default function ImageGallery({ images }) {
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -12,7 +11,7 @@ export default function ImageGallery({ images }) {
           <div className="card shadow-sm">
             <img
               src={src}
-              alt={`Project screenshot ${index + 1}`}
+              alt={`Screenshot ${index + 1}`}
               className="card-img-top"
               onClick={() => setSelectedImage(src)}
               style={{ cursor: "pointer" }}
@@ -21,14 +20,13 @@ export default function ImageGallery({ images }) {
         </div>
       ))}
 
+      {/* Modal Preview */}
       <Modal show={!!selectedImage} onHide={() => setSelectedImage(null)} centered>
         <Modal.Body>
-          <img src={selectedImage!} alt="Preview" className="img-fluid" />
+          <img src={selectedImage} alt="Preview" className="img-fluid" />
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={() => setSelectedImage(null)}>
-            Close
-          </Button>
+          <Button variant="secondary" onClick={() => setSelectedImage(null)}>Close</Button>
         </Modal.Footer>
       </Modal>
     </div>
