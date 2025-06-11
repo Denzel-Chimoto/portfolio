@@ -5,7 +5,8 @@ import './App.css';
 import ContactLinks from './components/ContactLinks';
 import SmartPharm from './pages/pages/smart-pharmacy';
 import CABSManuals from './pages/pages/reconciliation';
-import NRZBook from './pages/pages/bikeit';
+import NRZBook from './pages/pages/nrzbooking';
+import ProfitPredictor from './pages/pages/profit-predictor';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/smartpharm" element={<SmartPharm />} />
           <Route path="/cabsmanuals" element={<CABSManuals/>}/>
           <Route path="/nrzbooking" element={<NRZBook/>}/>
+          <Route path="/profpredictor" element={<ProfitPredictor/>}/>
         </Routes>
       </div>
     </Router>
