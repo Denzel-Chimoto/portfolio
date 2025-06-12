@@ -10,7 +10,7 @@ import ProfitPredictor from './pages/pages/profit-predictor';
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.VITE_BASE_PATH || '/portfolio'}>
       <div className='Denzy'>
         <CollapsibleExample />
         <Routes>
