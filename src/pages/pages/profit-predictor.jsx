@@ -7,10 +7,10 @@ import ExternalLinks from "../../components/ExternalLinks";
 
 export default function ProfitPredictor() {
   const projectData = {
-    title: "Profit Predictor",
-    year: "2023",
+    title: "SME Profit Predictor",
+    year: "2025",
     role: "Solo Project",
-    techStack: ["React", "React Native", "PostgreSQL", "EasyOCR", "PyTorch", "OpenCV"],
+    techStack: ["Python", "Scikit-learn", "XGBoost", "Random Forest", "PyTorch", "OpenCV"],
     githubLink: "https://github.com/yourusername/smart-pharmacy",
     demoLink: "https://demo.smartpharmacy.com",
   };
@@ -27,7 +27,7 @@ export default function ProfitPredictor() {
     <div className="container py-5">
       <ProjectHeader {...projectData} />
       <TechStackList stack={projectData.techStack} />
-      <ProjectOverview overview="An AI-powered business idea profit predictor" />
+      <ProjectOverview overview="ML model predicting if business idea will succeed in the Zimbabwean Economy" />
       <KeyPointsList items={keyPoints} />
       <ImageGallery images={images} />
       <ExternalLinks links={externalLinks} />
