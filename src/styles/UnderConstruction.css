@@ -1,0 +1,90 @@
+/* Animation styles - kept separate from Bootstrap */
+.gear-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+  }
+  
+  .gear {
+    position: absolute;
+    background: #6c757d; /* Bootstrap's gray */
+    border-radius: 50%;
+  }
+  
+  .gear-large {
+    width: 100px;
+    height: 100px;
+    left: 25px;
+    top: 25px;
+    animation: rotate 4s linear infinite;
+  }
+  
+  .gear-small {
+    width: 60px;
+    height: 60px;
+    left: 0;
+    top: 0;
+    animation: rotate-reverse 3s linear infinite;
+  }
+  
+  .gear-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .gear-tooth {
+    position: absolute;
+    background: #6c757d;
+    width: 20px;
+    height: 30px;
+    left: 50%;
+    top: -15px;
+    margin-left: -10px;
+    border-radius: 5px;
+  }
+  
+  .gear-large .gear-tooth {
+    height: 40px;
+    top: -20px;
+  }
+  
+  /* Position gear teeth */
+  .gear-large .gear-tooth:nth-child(1) { transform: rotate(0deg); }
+  .gear-large .gear-tooth:nth-child(2) { transform: rotate(45deg); }
+  .gear-large .gear-tooth:nth-child(3) { transform: rotate(90deg); }
+  .gear-large .gear-tooth:nth-child(4) { transform: rotate(135deg); }
+  .gear-large .gear-tooth:nth-child(5) { transform: rotate(180deg); }
+  .gear-large .gear-tooth:nth-child(6) { transform: rotate(225deg); }
+  .gear-large .gear-tooth:nth-child(7) { transform: rotate(270deg); }
+  .gear-large .gear-tooth:nth-child(8) { transform: rotate(315deg); }
+  
+  .gear-small .gear-tooth:nth-child(1) { transform: rotate(0deg); }
+  .gear-small .gear-tooth:nth-child(2) { transform: rotate(60deg); }
+  .gear-small .gear-tooth:nth-child(3) { transform: rotate(120deg); }
+  .gear-small .gear-tooth:nth-child(4) { transform: rotate(180deg); }
+  .gear-small .gear-tooth:nth-child(5) { transform: rotate(240deg); }
+  .gear-small .gear-tooth:nth-child(6) { transform: rotate(300deg); }
+  
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  @keyframes rotate-reverse {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+  }
+  
+  /* Optional: Add some shine to gears */
+  .gear::after {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background: rgba(255,255,255,0.15);
+    border-radius: 50%;
+    top: 35%;
+    left: 35%;
+  }

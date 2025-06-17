@@ -12,7 +12,7 @@ export default function ProfitPredictor() {
     role: "Solo Project",
     techStack: ["Python", "Scikit-learn", "XGBoost", "Random Forest", "PyTorch", "OpenCV"],
     githubLink: "https://github.com/yourusername/smart-pharmacy",
-    demoLink: "https://demo.smartpharmacy.com",
+    demoLink: "https://demo.smartpharmacy.com"
   };
 
   const keyPoints = [
