@@ -4,6 +4,12 @@ import ProjectOverview from "../../components/ProjectOverview";
 import KeyPointsList from "../../components/KeyPointsList";
 import ImageGallery from "../../components/ImageGallery";
 import ExternalLinks from "../../components/ExternalLinks";
+import sp_home from "../../assets/smart-pharm/sp_home.png";
+import sp_login from "../../assets/smart-pharm/sp_login.jpg";
+import sp_photo_upload from "../../assets/smart-pharm/sp_photo_upload.jpg";
+
+
+
 
 export default function SmartPharmacyPage() {
   const projectData = {
@@ -20,7 +26,7 @@ export default function SmartPharmacyPage() {
     { title: "Features", content: "OCR-based prescription scanning, real-time inventory matching." },
   ];
 
-  const images = ["/smartpharmacy1.jpg", "/smartpharmacy2.jpg"];
+  const images = [sp_login,sp_home,sp_photo_upload ];
   const externalLinks = [{ name: "GitHub Repo", url: projectData.githubLink }, { name: "Live Demo", url: projectData.demoLink }];
 
   return (
