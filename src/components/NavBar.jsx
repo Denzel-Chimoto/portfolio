@@ -11,7 +11,7 @@ function CollapsibleExample() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#about"><span className='number-tag'>01.</span> About</Nav.Link>
+            <Nav.Link href="/about"><span className='number-tag'>01.</span> About</Nav.Link>
             <Nav.Link href="#experience"> <span className='number-tag'>02.</span>Experience</Nav.Link>
 
             <NavDropdown title="03. Projects" id="collapsible-nav-dropdown">
@@ -20,10 +20,10 @@ function CollapsibleExample() {
               <NavDropdown.Item href="/profpredictor"> Profit Predictor </NavDropdown.Item>*/}
               <NavDropdown.Item href="/nrzbooking"> NRZ Booking </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Go to my Github</NavDropdown.Item>
+              <NavDropdown.Item href="https://github.com/Denzel-Chimoto/">Go to my Github</NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link href="#resume"><span className='number-tag'>04.</span>Resume</Nav.Link>
+            <Nav.Link href="https://wa.me/?text=Hie%Denzel.%Kindly%send%20your%20resume.%I'm%from-" target="_blank" rel="noopener noreferrer"><span className='number-tag'>04.</span>Resume</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

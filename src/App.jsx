@@ -8,6 +8,7 @@ import CABSManuals from './pages/pages/reconciliation';
 import NRZBook from './pages/pages/nrzbooking';
 import ProfitPredictor from './pages/pages/profit-predictor';
 import UnderConstruction from './components/UnderConstruction';
+import About from './pages/pages/About';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
           <Route path="/cabsmanuals" element={<CABSManuals/>}/>
           <Route path="/nrzbooking" element={<NRZBook/>}/>
           <Route path="/profpredictor" element={<ProfitPredictor/>}/>
+          <Route path="/about" element={<About/>}/>
+          
+
         </Routes>
       </div>
     </Router>
