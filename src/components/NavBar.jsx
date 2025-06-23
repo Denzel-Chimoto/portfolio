@@ -23,7 +23,7 @@ function CollapsibleExample() {
               <NavDropdown.Item href="https://github.com/Denzel-Chimoto/">Go to my Github</NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link href="https://wa.me/?text=Hie%Denzel.%Kindly%send%20your%20resume.%I'm%from-" target="_blank" rel="noopener noreferrer"><span className='number-tag'>04.</span>Resume</Nav.Link>
+            <Nav.Link href="https://wa.me/263776701531?text=Hie%20Denzel.%20Kindly%20send%20your%20resume.%20I'm%20from-" target="_blank" rel="noopener noreferrer"><span className='number-tag'>04.</span>Resume</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
