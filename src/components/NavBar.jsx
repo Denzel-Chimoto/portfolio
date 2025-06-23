@@ -12,7 +12,7 @@ function CollapsibleExample() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link href="/about"><span className='number-tag'>01.</span> About</Nav.Link>
-            <Nav.Link href="#experience"> <span className='number-tag'>02.</span>Experience</Nav.Link>
+            <Nav.Link href="/experience"> <span className='number-tag'>02.</span>Experience</Nav.Link>
 
             <NavDropdown title="03. Projects" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="/smartpharm">Smart Pharmacy Network</NavDropdown.Item>

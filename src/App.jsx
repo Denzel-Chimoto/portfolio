@@ -9,6 +9,7 @@ import NRZBook from './pages/pages/nrzbooking';
 import ProfitPredictor from './pages/pages/profit-predictor';
 import UnderConstruction from './components/UnderConstruction';
 import About from './pages/pages/About';
+import Experience from './pages/pages/Experience';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/nrzbooking" element={<NRZBook/>}/>
           <Route path="/profpredictor" element={<ProfitPredictor/>}/>
           <Route path="/about" element={<About/>}/>
+          <Route path="/experience" element={<Experience/>}/>
           
 
         </Routes>
