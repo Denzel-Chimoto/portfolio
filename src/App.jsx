@@ -9,31 +9,31 @@ import NRZBook from './pages/pages/nrzbooking';
 import ProfitPredictor from './pages/pages/profit-predictor';
 import UnderConstruction from './components/UnderConstruction';
 
-// function App() {
-//   return (
-//     <Router>
-//       <div className='Denzy'>
-//         <CollapsibleExample />
-//         <Routes>
-//           <Route path="/" element={<Home />} />
-//           <Route path="*" element={<Navigate to="/" />} />
-//           <Route path="/smartpharm" element={<SmartPharm />} />
-//           <Route path="/cabsmanuals" element={<CABSManuals/>}/>
-//           <Route path="/nrzbooking" element={<NRZBook/>}/>
-//           <Route path="/profpredictor" element={<ProfitPredictor/>}/>
-//         </Routes>
-//       </div>
-//     </Router>
-//   );
-// }
-
 function App() {
   return (
-    <div className="App">
-      <UnderConstruction />
-      {/* Rest of your app content */}
-    </div>
+    <Router>
+      <div className='Denzy'>
+        <CollapsibleExample />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="/smartpharm" element={<SmartPharm />} />
+          <Route path="/cabsmanuals" element={<CABSManuals/>}/>
+          <Route path="/nrzbooking" element={<NRZBook/>}/>
+          <Route path="/profpredictor" element={<ProfitPredictor/>}/>
+        </Routes>
+      </div>
+    </Router>
   );
 }
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <UnderConstruction />
+//       {/* Rest of your app content */}
+//     </div>
+//   );
+// }
 
 export default App;

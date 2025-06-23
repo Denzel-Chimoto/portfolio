@@ -13,9 +13,9 @@ export default function NRZBOOKING() {
     title: "National Railways of Zimbabwe",
     year: "2023",
     role: "Solo Project",
-    techStack: ["React", "React Native", "PostgreSQL", "EasyOCR", "PyTorch", "OpenCV"],
-    githubLink: "https://github.com/Denzel-Chimoto/smart-pharmacy",
-    demoLink: "https://demo.smartpharmacy.com",
+    techStack: ["Flutter", "Dart", "Google Maps"],
+    githubLink: "https://github.com/Denzel-Chimoto/NRZ-Booking",
+    Platforms: "Android and IOS app",
   };
 
   const keyPoints = [
@@ -30,7 +30,7 @@ export default function NRZBOOKING() {
     <div className="container py-5">
       <ProjectHeader {...projectData} />
       <TechStackList stack={projectData.techStack} />
-      <ProjectOverview overview="An AI-powered marketplace connecting patients with pharmacies." />
+      <ProjectOverview overview="A logistics platform focusing on a cheaper and taxable import stream in Zimbabwe." />
       <KeyPointsList items={keyPoints} />
       <ImageGallery images={images} />
       <ExternalLinks links={externalLinks} />

@@ -16,8 +16,8 @@ function CollapsibleExample() {
 
             <NavDropdown title="03. Projects" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="/smartpharm">Smart Pharmacy Network</NavDropdown.Item>
-              <NavDropdown.Item href="/cabsmanuals">Research Paper on Manual Reconciliations</NavDropdown.Item>
-              <NavDropdown.Item href="/profpredictor"> Profit Predictor </NavDropdown.Item>
+              {/*<NavDropdown.Item href="/cabsmanuals">Research Paper on Manual Reconciliations</NavDropdown.Item>
+              <NavDropdown.Item href="/profpredictor"> Profit Predictor </NavDropdown.Item>*/}
               <NavDropdown.Item href="/nrzbooking"> NRZ Booking </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">Go to my Github</NavDropdown.Item>

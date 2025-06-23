@@ -7,18 +7,20 @@ import ExternalLinks from "../../components/ExternalLinks";
 import sp_home from "../../assets/smart-pharm/sp_home.png";
 import sp_login from "../../assets/smart-pharm/sp_login.jpg";
 import sp_photo_upload from "../../assets/smart-pharm/sp_photo_upload.jpg";
-
+import sp_web_login from "../../assets/smart-pharm/sp_web_login.png";
+import sp_web_prescriptions from "../../assets/smart-pharm/sp_web_prescriptions.png";
+import sp_web_postgre from "../../assets/smart-pharm/sp_web_postgre.png";
 
 
 
 export default function SmartPharmacyPage() {
   const projectData = {
     title: "Smart Pharmacy Network",
-    year: "2023",
-    role: "Solo Project",
-    techStack: ["React", "React Native", "PostgreSQL", "EasyOCR", "PyTorch", "OpenCV"],
-    githubLink: "https://github.com/yourusername/smart-pharmacy",
-    demoLink: "https://demo.smartpharmacy.com",
+    year: "2025",
+    role: "Team Project",
+    techStack: ["React", "React Native", "PostgreSQL", "EasyOCR", "FastAPI", "SqlAlchemy", "Deepseek R1 API"],
+    githubLink: "https://github.com/Denzel-Chimoto/smart-pharmacy",
+
   };
 
   const keyPoints = [
@@ -26,7 +28,7 @@ export default function SmartPharmacyPage() {
     { title: "Features", content: "OCR-based prescription scanning, real-time inventory matching." },
   ];
 
-  const images = [sp_login,sp_home,sp_photo_upload ];
+  const images = [sp_login,sp_home,sp_photo_upload,sp_web_login,sp_web_prescriptions,sp_web_postgre ];
   const externalLinks = [{ name: "GitHub Repo", url: projectData.githubLink }, { name: "Live Demo", url: projectData.demoLink }];
 
   return (
