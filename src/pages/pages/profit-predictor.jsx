@@ -4,6 +4,7 @@ import ProjectOverview from "../../components/ProjectOverview";
 import KeyPointsList from "../../components/KeyPointsList";
 import ImageGallery from "../../components/ImageGallery";
 import ExternalLinks from "../../components/ExternalLinks";
+import home_dash from "../../assets/profit_predictor/home_dash.png"
 
 export default function ProfitPredictor() {
   const projectData = {
@@ -20,7 +21,7 @@ export default function ProfitPredictor() {
     { title: "Features", content: "OCR-based prescription scanning, real-time inventory matching." },
   ];
 
-  const images = ["/smartpharmacy1.jpg", "/smartpharmacy2.jpg"];
+  const images = [{home_dash}, "/smartpharmacy2.jpg"];
   const externalLinks = [{ name: "GitHub Repo", url: projectData.githubLink }, { name: "Live Demo", url: projectData.demoLink }];
 
   return (
