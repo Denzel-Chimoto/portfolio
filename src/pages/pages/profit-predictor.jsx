@@ -11,14 +11,14 @@ export default function ProfitPredictor() {
     title: "SME Profit Predictor",
     year: "2025",
     role: "Solo Project",
-    techStack: ["Python", "Scikit-learn", "XGBoost", "Random Forest", "PyTorch", "OpenCV"],
-    githubLink: "https://github.com/yourusername/smart-pharmacy",
-    demoLink: "https://demo.smartpharmacy.com"
+    techStack: ["Python 3.x", "Scikit-learn", "Matplotlib", "Random Forest", "Seaborn", "Streamlit", "Joblib"],
+    githubLink: "https://github.com/Denzel-Chimoto/ProfitPredictor_zw",
+    // demoLink: "https://demo.smartpharmacy.com"
   };
 
   const keyPoints = [
-    { title: "Problem Solved", content: "Reducing pharmacy search time by 50% through AI-powered matching." },
-    { title: "Features", content: "OCR-based prescription scanning, real-time inventory matching." },
+    { title: "Problem Solved", content: "Predicting the profitability of small and medium enterprises (SMEs) in Zimbabwe." },
+    { title: "Features", content: "Utilizes a machine learning model trained on historical data to forecast business success." },
   ];
 
   const images = [{home_dash}, "/smartpharmacy2.jpg"];
